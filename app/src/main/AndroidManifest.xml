@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="magdamiu.com.androidfundamentals">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/android_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".week10.recyclerview.ComplexRecyclerView"></activity>
+        <activity android:name=".week10.BasicUiActivity" />
+        <activity android:name=".week9.FileManagementActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".week3.Week3Activity" />
+        <activity android:name=".week3.LoginActivity" />
+        <activity android:name=".week3.WebViewActivity" />
+        <activity android:name=".week4.SpinnerActivity" />
+        <activity android:name=".week4.Week4RecapActivity" />
+        <activity android:name=".week4.ConstraintLayoutActivity" />
+        <activity
+            android:name=".week5.LifecycleActivity"
+            android:label="@string/activity_lifecycle" />
+        <activity
+            android:name=".week5.ReceiverLifecycleActivity"
+            android:label="@string/reciever_activity" />
+        <activity android:name=".week5.ImplicitIntentActivity" />
+        <activity android:name=".week4.RecyclerViewActivity" />
+        <activity android:name=".week4.group2.RecyclerViewActivity" />
+        <activity android:name=".week5.SendTextActivity" />
+        <activity
+            android:name=".week5.ReceiveTextActivity"
+            android:parentActivityName=".week5.SendTextActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".week5.SendTextActivity" />
+        </activity>
+        <activity
+            android:name=".week5.FirstActivity"
+            android:label="@string/first_activity" />
+        <activity
+            android:name=".week5.SecondActivity"
+            android:label="@string/second_activity"
+            android:parentActivityName=".week5.FirstActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".week5.FirstActivity" />
+        </activity>
+        <activity android:name=".week6.tabs.TabsActivity" />
+        <activity android:name=".week7.AlertsAndCardViewActivity" />
+        <activity android:name=".week7.CollapsingToolbarActivity" />
+        <activity android:name=".week7.CameraActivity" />
+        <activity android:name=".week6.fragments.BundleFragmentActivity" />
+        <activity android:name=".week6.fragments.FragmentActivity" />
+        <activity android:name=".week6.fragments.MethodFragmentActivity" />
+        <activity android:name=".week6.fragments.ListenerFragmentActivity" />
+        <activity android:name=".week6.fragments.StaticFragmentActivity" />
+        <activity android:name=".week6.fragments.DynamicFragmentActivity" />
+        <activity
+            android:name=".week6.NavigationDrawerActivity"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".week8.MoviesActivity" />
+        <activity android:name=".week8.github.api.GithubActivity" />
+    </application>
+
+</manifest>
